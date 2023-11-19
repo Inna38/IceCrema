@@ -1,0 +1,259 @@
+.address {
+  position: relative;
+  background-color: var(--primary-background);
+}
+.address-list {
+  position: relative;
+  top: -409px;
+  width: 270px;
+  height: 412px;
+  border-radius: 24px;
+  background: #fcfcfc;
+  box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
+  margin: auto;
+  padding: 40px 32px 24px 32px;
+  padding-left: 32px;
+}
+
+.address__list-item::after {
+  content: "";
+  display: block;
+  width: 176px;
+  height: 1px;
+  background-color: #e1e1e1;
+}
+
+.address-list:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.address__list-title {
+  display: inline-block;
+  min-width: 80px;
+  color: #131313;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0.48px;
+  border-radius: 4px;
+  background: #f8d24e;
+  padding: 4px 22px;
+  margin-bottom: 20px;
+}
+
+.address__list-city {
+  color: #131313;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 186%;
+  letter-spacing: 0.48px;
+  margin-bottom: 5px;
+}
+
+.address__list-address {
+  color: #d6936d;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 183%;
+  letter-spacing: 0.48px;
+  margin-bottom: 24px;
+}
+
+.address__list-dtscription {
+  color: #131313;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 186%;
+  margin-top: 14px;
+  margin-bottom: 8px;
+}
+
+.address__list-time {
+  display: block;
+  color: #ababab;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 186%;
+  margin-top: 5px;
+}
+
+.address__list-contact {
+  margin-top: 20px;
+}
+
+.address__list-tel {
+  display: block;
+  color: #131313;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 160%;
+  margin-bottom: 8px;
+}
+
+.address__list-email {
+  color: #131313;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 160%;
+}
+
+.address-btn-container {
+  margin-top: -250px;
+}
+
+.address-primary-btn {
+  text-align: center;
+  margin-right: 4px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:disabled {
+    background-color: #ababab;
+  }
+}
+
+.address-btn {
+  text-align: center;
+  padding: 12px 54px;
+  margin-top: 16px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    fill: #ffffff;
+  }
+  &:disabled {
+    background-color: transparent;
+    border-color: #ababab;
+  }
+}
+
+.address svg {
+  margin-left: 4px;
+}
+
+@media screen and (min-width: 280px) {
+  .address-btn-container {
+    margin-left: 45px;
+  }
+}
+
+@media screen and (min-width: 300px) {
+  .address-btn-container {
+    margin-left: 60px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .address-btn-container {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .address-btn-container {
+    margin-left: 100px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .address-list-container {
+    display: flex;
+    margin-left: -32px;
+  }
+
+  .address__list-item::after {
+    margin-top: 32px;
+  }
+  .address-list {
+    width: 224px;
+    height: 537px;
+    margin-left: 22px;
+    flex-basis: calc((100% - 64px) / 3);
+    margin-top: 0;
+  }
+
+  .address__list-title {
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.64px;
+    padding: 4px 10px;
+  }
+
+  .address__list-city {
+    font-size: 14px;
+    letter-spacing: 0.56px;
+  }
+
+  .address__list-address {
+    font-size: 14px;
+    letter-spacing: 0.56px;
+  }
+
+  .address__list-dtscription {
+    font-size: 16px;
+  }
+
+  .address__list-contact {
+    margin-top: 32px;
+  }
+
+  .address__list-tel {
+    font-size: 14px;
+    line-height: 150%;
+  }
+  .address__list-time {
+    font-size: 14px;
+  }
+  .address-btn-container {
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  .address-btn {
+    margin-left: 8px;
+    padding: 10px 52px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .address-list {
+    width: 368px;
+    height: 542px;
+  }
+
+  .address-list {
+    top: -170px;
+  }
+  .address__list-item::after {
+    width: 288px;
+  }
+  .address__list-city {
+    font-size: 16px;
+    letter-spacing: 0.64px;
+  }
+
+  .address__list-address {
+    font-size: 16px;
+    letter-spacing: 0.64px;
+  }
+
+  .address__list-dtscription {
+    letter-spacing: 0.64px;
+  }
+
+  .address__list-tel {
+    font-size: 16px;
+  }
+
+  .address__list-time {
+    font-size: 16px;
+  }
+
+  .address-btn-container {
+    margin-top: -85px;
+  }
+}

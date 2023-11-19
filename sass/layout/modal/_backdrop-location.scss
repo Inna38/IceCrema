@@ -1,0 +1,91 @@
+.backdrop {
+  position: fixed;
+  top: 0px;
+  z-index: 3;
+}
+
+.backdrop svg {
+  fill: #131313;
+}
+
+.modal {
+  width: 280px;
+  height: 365px;
+  border-radius: 10px;
+  border: 2px solid #f8d24e;
+  background: #fcfcfc;
+  transform: translate(-17%, 10%) scale(1);
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .backdrop.is-hidden & {
+    transform: translate(-17%, -10%) scale(0.9);
+  }
+}
+
+.modal__location-title {
+  color: #131313;
+  text-align: center;
+  font-family: Seymour One;
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 28px;
+}
+
+.modal__location-img {
+  display: block;
+  margin: 12px auto 24px auto;
+}
+
+.modal__location-map {
+  display: block;
+  text-align: center;
+  width: 134px;
+  border-radius: 10px;
+  background: #f8d24e;
+  color: #131313;
+  font-weight: 600;
+  padding: 12px;
+  margin: auto;
+}
+
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-close {
+  position: absolute;
+  z-index: 4;
+  left: 65%;
+  top: 45px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .burger__menu-btn {
+    display: none;
+  }
+
+  .burger-container {
+    justify-content: space-around;
+  }
+
+  .modal {
+    width: 568px;
+    height: 458px;
+    transform: translate(0%, 15%);
+  }
+
+  .modal__location-img {
+    display: block;
+    margin: 32px auto;
+  }
+
+  .modal-close {
+    left: 85%;
+    top: 85px;
+  }
+}

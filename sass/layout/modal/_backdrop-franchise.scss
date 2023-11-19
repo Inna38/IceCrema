@@ -1,0 +1,162 @@
+.backdrop-franchise {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+}
+
+.modal-franchise {
+  width: 270px;
+  height: 674px;
+  transform: translate(2%, 100%) scale(1);
+}
+
+.franchise-close {
+  top: 101%;
+  left: 88%;
+}
+
+.modal__franchise-title {
+  color: #131313;
+  text-align: center;
+  font-family: Seymour One;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 28px;
+  margin-bottom: 20px;
+}
+
+.modal__franchise-description {
+  display: block;
+  width: 222px;
+  color: #131313;
+  text-align: center;
+  font-size: 14px;
+  line-height: 140%;
+  margin: auto;
+  margin-bottom: 24px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 224px;
+  margin: auto;
+}
+
+.input {
+  border-radius: 10px;
+  border: 1px solid #84a178;
+  background: rgba(248, 210, 78, 0.1);
+  margin-bottom: 12px;
+  padding: 8px 12px;
+}
+
+.textarea {
+  height: 64px;
+  resize: none;
+  border-radius: 10px;
+  border: 1px solid #84a178;
+  background: rgba(248, 210, 78, 0.1);
+  padding: 8px 12px;
+}
+
+.modal__franchise-btn {
+  width: 114px;
+  border-radius: 10px;
+  background: #f8d24e;
+  color: #131313;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: normal;
+  margin: auto;
+  margin-top: 24px;
+  padding: 12px 14px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 290px) {
+  .modal-franchise {
+    transform: translate(4%, 100%) scale(1);
+  }
+}
+
+@media screen and (min-width: 300px) {
+  .modal-franchise {
+    transform: translate(6%, 100%) scale(1);
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .modal-franchise {
+    width: 280px;
+    transform: translate(8%, 100%) scale(1);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .modal-franchise {
+    transform: translate(28%, 100%) scale(1);
+  }
+  .franchise-close {
+    left: 112%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .franchise-close {
+    left: 112%;
+    top: -18%;
+  }
+
+  .modal-franchise {
+    width: 568px;
+    height: 668px;
+    transform: translate(20%, -20%) scale(1);
+  }
+
+  .modal__franchise-title {
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 32px;
+    margin-bottom: 24px;
+  }
+
+  .modal__franchise-description {
+    width: 448px;
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+
+  .form {
+    width: 368px;
+  }
+
+  .input {
+    width: 368px;
+    margin-bottom: 16px;
+    padding: 11px 16px;
+  }
+
+  .textarea {
+    height: 84px;
+
+    padding: 11px 16px;
+  }
+
+  .modal__franchise-btn {
+    width: 121px;
+    margin-top: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-franchise {
+    transform: translate(50%, -25%) scale(1);
+  }
+
+  .franchise-close {
+    left: 142%;
+    top: -23%;
+  }
+}

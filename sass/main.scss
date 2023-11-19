@@ -1,0 +1,30 @@
+@import "../node_modules/bootstrap/scss/carousel";
+@import './utils/variables';
+@import './utils/visually-hidden';
+
+@import './base/common';
+@import './base/container';
+@import './base/button';
+
+@import './components/section';
+
+@import './components/logo';
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/advantages';
+@import './layout/products';
+@import './layout/reviews';
+@import './layout/address';
+@import './layout/footer';
+
+@import './layout/burger-menu';
+
+@import './layout/_background-ice';
+
+
+@import './layout/modal/backdrop-location';
+@import './layout/modal/backdrop-franchise';
+@import './layout/modal/backdrop-made';
+@import './layout/modal/backdrop-product';
+
