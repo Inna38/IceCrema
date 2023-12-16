@@ -322,6 +322,11 @@ button {
   padding-bottom: 45px;
 }
 
+@media screen and (min-width: 768px) {
+  .burger {
+    margin-right: 32px;
+  }
+}
 @media screen and (max-width: 767px) {
   .mobile__btn {
     display: none;
@@ -335,7 +340,6 @@ button {
     background-color: transparent;
     fill: #ffffff;
     margin-left: auto;
-    margin-right: 32px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1532,7 +1536,6 @@ button {
 
 .burger-close {
   background-color: transparent;
-  margin-right: 12px;
   padding: 12px;
   cursor: pointer;
 }

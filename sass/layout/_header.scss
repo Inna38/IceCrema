@@ -19,6 +19,12 @@
   padding-bottom: 45px;
 }
 
+@media screen and (min-width: 768px) {
+  .burger {
+     margin-right: 32px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .mobile__btn {
     display: none;
@@ -34,7 +40,6 @@
     background-color: transparent;
     fill: #ffffff;
     margin-left: auto;
-    margin-right: 32px;
   }
 }
 

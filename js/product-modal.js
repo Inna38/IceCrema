@@ -42,6 +42,10 @@
     }
     refs.form.reset()
     console.log(res);
+    refs.buyNow.forEach((el) => {
+        el.removeAttribute("disabled", "disabled");
+      });
+    toggleModal()
   })
 })();
 
