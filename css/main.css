@@ -199,9 +199,7 @@ button {
 }
 @media screen and (min-width: 320px) {
   .container {
-    width: 320px;
-    padding-left: 20px;
-    padding-right: 20px;
+    width: 380px;
   }
 }
 @media screen and (min-width: 480px) {
@@ -593,14 +591,8 @@ button {
   position: absolute;
   top: -18px;
   left: 60px;
-  width: 280px;
-  height: 280px;
-}
-
-.advamtages-svg-yellow {
-  border-radius: 165px;
-  background: linear-gradient(0deg, rgba(248, 210, 78, 0.7) 0%, rgba(248, 210, 78, 0.7) 100%), #d9d9d9;
-  box-shadow: 0px 5.3081283569px 19.9054794312px 0px rgba(153, 114, 23, 0.25);
+  width: 0;
+  height: 0;
 }
 
 .advantages-img {
@@ -670,69 +662,10 @@ button {
   line-height: 170%;
 }
 
-@media screen and (min-width: 280px) {
-  .advamtages-svg {
-    top: -17px;
-    left: 1px;
-    width: 270px;
-    height: 270px;
-  }
-}
-@media screen and (min-width: 287px) {
-  .advamtages-svg {
-    left: 5px;
-  }
-}
-@media screen and (min-width: 290px) {
-  .advamtages-svg {
-    left: 6px;
-  }
-}
-@media screen and (min-width: 295px) {
-  .advamtages-svg {
-    left: 12px;
-  }
-}
-@media screen and (min-width: 300px) {
-  .advamtages-svg {
-    left: 12px;
-  }
-}
-@media screen and (min-width: 305px) {
-  .advamtages-svg {
-    left: 13px;
-  }
-}
-@media screen and (min-width: 307px) {
-  .advamtages-svg {
-    left: 15px;
-  }
-}
-@media screen and (min-width: 311px) {
-  .advamtages-svg {
-    left: 17px;
-  }
-}
-@media screen and (min-width: 317px) {
-  .advamtages-svg {
-    left: 20px;
-  }
-}
-@media screen and (min-width: 320px) {
-  .advamtages-svg {
-    left: 2px;
-    width: 280px;
-    height: 280px;
-  }
-}
 @media screen and (min-width: 480px) {
   .advantages-img {
     border-radius: 50%;
     margin: auto;
-  }
-  .advamtages-svg {
-    top: -18px;
-    left: 60px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -758,11 +691,6 @@ button {
   }
   .advantages-img {
     margin: auto;
-  }
-  .advamtages-svg {
-    left: 1px;
-    width: 330px;
-    height: 330px;
   }
   .three {
     line-height: 194%;
@@ -798,13 +726,6 @@ button {
   }
 }
 @media screen and (min-width: 1200px) {
-  .advamtages-svg {
-    top: -28px;
-    left: 45px;
-    width: 480px;
-    height: 470px;
-    border-radius: 1228px;
-  }
   .advantages-container {
     justify-content: space-around;
     margin-top: 70px;
@@ -836,12 +757,6 @@ button {
   }
   .advantages-btn {
     margin-top: 54px;
-  }
-}
-@media screen and (min-width: 1400px) {
-  .advamtages-svg {
-    left: 50px;
-    width: 485px;
   }
 }
 .description {
@@ -1212,7 +1127,10 @@ button {
 }
 
 .address-btn-container {
-  margin-top: -250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -280px;
 }
 
 .address-primary-btn {
@@ -1242,26 +1160,6 @@ button {
   margin-left: 4px;
 }
 
-@media screen and (min-width: 280px) {
-  .address-btn-container {
-    margin-left: 45px;
-  }
-}
-@media screen and (min-width: 300px) {
-  .address-btn-container {
-    margin-left: 60px;
-  }
-}
-@media screen and (min-width: 320px) {
-  .address-btn-container {
-    margin-left: 50px;
-  }
-}
-@media screen and (min-width: 480px) {
-  .address-btn-container {
-    margin-left: 100px;
-  }
-}
 @media screen and (min-width: 768px) {
   .address-list-container {
     display: flex;
@@ -1304,14 +1202,7 @@ button {
   .address__list-time {
     font-size: 14px;
   }
-  .address-btn-container {
-    margin-left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-  }
   .address-btn {
-    margin-left: 8px;
     padding: 10px 52px;
   }
 }
